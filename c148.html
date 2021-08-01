@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    </head>
+
+    <body>
+        <a-assets> 
+            <a-asset-item  id='tiger' src='models/tiger/Mesh_BengalTiger.gltf'></a-asset-item>  
+            <a-asset-item id='giraffe' src='models/giraffe/scene.gltf'></a-asset-item> 
+            <a-asset-item id='photographer' src='models/photographer/scene.gltf'></a-asset-item>
+            <a-asset-item id='tree' src='models/tree_for_games/scene.gltf'></a-asset-item> 
+            <a-asset-item id='fence' src='models/wooden_fence/scene.gltf'></a-asset-item>
+        </a-assets>
+
+        <a-scene background='color:lightblue'>
+            <a-camera position='0 8 15'></a-camera> 
+
+            <a-entity light='type:ambient;intensity:1.5'></a-entity>
+            <a-entity light='type:directional;intensity:1;color:green;distance:50;castshadow:true;' position='-100 18 20'></a-entity>
+
+            <a-circle position='-0.4 -0.76 -25' rotation='-90 0 0' radius='100' shadow='receive:true' visible='true' color='#2e6f10'></a-circle>
+            <a-entity>
+                
+                <!-- Tiger -->
+                <a-entity gltf-model='#tiger' position='-5 2 0' rotation='0 55 0' scale='0.05 0.05 0.05' shadow='cast:true'>
+                </a-entity>
+            </a-entity>
+
+            <!-- giraffe -->
+            <a-entity>
+            <a-entity gltf-model='#giraffe' position='-8 5 8.7' rotation='0 80 0' scale='1 1 1'>
+            </a-entity>
+        </a-entity>
+
+            <!-- photographer -->
+            <a-entity>
+                <a-entity gltf-model='#photographer' position='12 3 3' rotation='0 -92 0' scale='0.8 0.8 0.8'>
+                </a-entity>
+            </a-entity>
+
+            <!-- trees -->
+            <a-entity>
+            <a-entity gltf-model='#tree' position='-10 2 0' rotation='0 0 0' scale='0.007 0.007 0.007'></a-entity>
+        </a-entity>
+
+        <a-entity>
+            <a-entity gltf-model='#tree' position='12 2 -2' rotation='0 0 0' scale='0.007 0.007 0.007'></a-entity>
+        </a-entity>
+
+        <!-- fences -->
+        <a-entity>
+            <a-entity gltf-model='#fence' position='-2 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='-10 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='-19 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='-29 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='-39 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='-39 0.9 -15' rotation='0 -90 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='7.2 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='14 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity> 
+
+            <a-entity gltf-model='#fence' position='21 0.9 -15' rotation='0 0 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='28 0.9 -15' rotation='0 -90 0' scale='0.005 0.005 0.005'></a-entity>
+
+            <a-entity gltf-model='#fence' position='28 0.9 -8' rotation='0 -90 0' scale='0.005 0.005 0.005'></a-entity>
+        </a-entity>
+        </a-scene>
+    
+    </body>
+</html>
